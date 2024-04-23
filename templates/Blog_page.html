@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGPOST VIEW</title>
+    <link rel="stylesheet" href="../static/blog_page.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="child">
+            <a href="#create">Create Blogs</a>
+        </div>
+        <div class="child">
+            Welcome {{user}}
+        </div>
+        <div class="child">
+            Alert Center:
+            <br>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p>{{message}}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+        <div class="child">
+        <a href="/logout">LogOut</a>
+        </div>
+    </div>
+    
+    
+
+<section id="create">   
+    <form action="" method="post">
+        <legend>:Create Blog:</legend>
+        Title: <input type="text" id="formtitle" name="formtitle">
+        content: <textarea name="formcontent" id="formcontent" cols="30" rows="10"></textarea>
+        <input type="submit">
+    </form>
+</section> 
+<section id="blogs">
+{% for row in rows %}
+    <div class="maindiv">
+        <div class="titleimgwrap">
+            <div class="imgname">
+                <img src="data:image/png;base64,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" alt="userphoto">
+                <h4> User: {{row[0]}} </h4>
+            </div>
+            <div class="title">
+                <h3> Title: {{row[1]}} </h3>
+            </div>
+        </div>
+        <div class="content">
+            <p>
+                {{row[2]}}
+            </p>
+        </div>
+    </div>
+{% endfor %}
+</section>
+</body>
+</html>

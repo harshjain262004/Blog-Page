@@ -1,0 +1,139 @@
+.navbar{
+    background-color: aliceblue;
+    border: solid black 2px;
+    border-radius:20px ;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.child{
+    background-color: beige;
+    border: solid black 1px;
+    border-radius:15px ;
+    height:60px;
+    width:25%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#create{
+    background-color: aliceblue;
+    border: solid black 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    border-radius:30px;
+    width:90%;
+    height:auto;
+}
+
+form{
+    max-width: 600px;
+    margin: 20px auto;
+    background-color:beige;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+legend{
+    text-align: center;
+}
+
+#blogs{
+    margin-top: 2%;
+    border: solid black 1px;
+    border-radius: 1vh;
+}
+
+.maindiv{
+    height: auto;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.titleimgwrap{
+    display: flex;
+    flex-direction:row;
+    /* border: solid black 1px; */
+    margin: 15px;
+    /* border-radius: 4px; */
+    display: flex;
+    flex-direction: row;
+    height:20%;
+}
+
+div img{
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+    mix-blend-mode:darken;
+}
+
+.imgname{
+    padding: 5px;
+    margin:8px;
+    width:20%;
+    height:100px;
+    text-align: center;
+    border: solid black 1px;
+    background-color: aliceblue;
+    object-fit: contain;
+}
+
+.title{
+    padding: 5px;
+    margin:8px;
+    width:80%;
+    height:100px;
+    text-align: center;
+    border: solid black 1px;
+    background-color: aliceblue;
+    object-fit: contain;
+}
+
+.content{
+    border: solid black 1px;
+    margin:23px;
+    height:200px;
+    padding: 5px;
+    background-color: aliceblue;
+    overflow: auto;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGPOST LOGIN</title>
+    <link rel = "stylesheet" href = "..\static\login_page.css">
+</head>
+<body>
+        <div class = "login_page">
+        <form action="" method="post">
+            Email: <input type="email" class = "login_page_username" name="loginpageusername">
+        <br>
+            PassWord: <input type = "password" class = "login_page_password" name="loginpagepassword">
+        <br>
+            <a href = "signup_page.html" class = "login_page_donthaveaccount">Dont have a Account? Signup Now </a>
+        <br>
+        <input type="submit" class = "login_page_submit_btn" id="Submit">
+    </form>
+    {{message}}
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                        <h3>
+                            {{message}}
+                        </h3>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

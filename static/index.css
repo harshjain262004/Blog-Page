@@ -1,0 +1,66 @@
+.navbar{
+border-radius: 20px;
+display: flex;
+flex-direction: row;
+background-color: beige;
+height: 100px;
+
+}
+    
+.navchild{
+border: solid rgb(0, 0, 0) 1px;
+border-radius: 20px;
+width: 25%;
+text-align: center;
+padding: 0px;
+margin: 0px;
+background-color: aliceblue;
+object-fit: contain;
+}
+
+.navchildpic{
+width: 25%;
+border: solid black 1px;
+border-radius: 20px;
+text-align: center;
+background-color: aliceblue;
+
+}
+
+.navchildpic img{
+height:100%;
+width: 100%;
+object-fit: contain;
+}
+ 
+.indexcontent{
+display: flex;
+flex-direction: row;
+text-align: center;
+margin: 10px;
+border: solid black 5px;
+border-radius: 2px;
+}
+    
+.techstack{
+text-align: center;
+border: solid black 3px;
+width: 50%;
+border-radius: 2px;
+    
+}
+.techstack ul{
+list-style-type: none;
+}
+.use h1{
+text-align: center;
+}
+.use{
+text-align: left;
+border: solid black 3px;
+width: 50%; 
+border-radius: 2px;
+}
+ body{
+background-color: beige;
+ }
